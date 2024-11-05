@@ -247,19 +247,16 @@
             <div class="skills">
                <h2 class="h1-skills">Code Example</h2>
                <pre class="code">
-<code>
-  const t = Promise((resolve) =&amp {
-    resolve("");
-  });
-
-  t.then(() =&amp {
-    t.then(() =&amp console.log("B"));
-  });
-
-  console.log("D");
-
-  t.then(() =&amp console.log("C"));
-</code>
+                <code>
+                    const t = Promise((resolve) =&gt; {
+                        resolve(&quot;&quot;);
+                    });
+                    t.then(() =&gt; {
+                        t.then(() =&gt; console.log(&quot;B&quot;));
+                    });
+                    console.log(&quot;D&quot;);
+                    t.then(() =&gt; console.log(&quot;C&quot;));
+                    </code>
 </pre>
             </div>
          </section>
